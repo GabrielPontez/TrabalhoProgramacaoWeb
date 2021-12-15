@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/Icons/checklist.png"/>
+    <link rel="stylesheet" href="Formulario.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Cadastrar Aluno</title>
+</head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <h2>Fazer Cadastro</h2>
+            </div>
+            <form id="form" class="form" action="Cadastro.php" method="post">
+                <div class="form-control">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" placeholder="Informe seu nome completo" id="nome" name="nome"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="nome">Matrícula</label>
+                    <input type="text" placeholder="Informe seu número de matrícula" id="matricula" name="matricula"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="nome">Primera Nota</label>
+                    <input type="text" placeholder="Informe sua primeira nota" id="pri_nota" name="nota1"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                    <label for="nome">Segunda Nota</label>
+                    <input type="text" placeholder="Informe sua segunda nota" id="seg_nota" name="nota2"/>
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <button id="submit">Enviar</button>
+            </form>
+            <input type="checkbox" id="active">
+            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+            <div class="wrapper">
+               <ul>
+                  <li><a href="Cadastro.html">Fazer Cadastro</a></li>
+                  <li><a href="Cadastro.php">Lista dos Cadastrados</a></li>
+               </ul>
+            </div>
+        <script src="script.js"></script>
+    </body>
+</html>
